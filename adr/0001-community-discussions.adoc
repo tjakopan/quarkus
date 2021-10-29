@@ -25,7 +25,7 @@ User wants to locate a answer to a question - zulip chats does not show up in go
 
 Contributor want to arrange or attend an event around Quarkus - where do he post/look for info on that ?
 
-Contributor/committer are trying to follow new questions and issues - what does he need to track to do that ? today it is alot and it is all different notification sytems and mainly its a big "firehose" with no good ability to filter out what you don't need.
+Contributor/committer are trying to follow new questions and issues - what does he need to track to do that ? today it is a lot and it is all different notification sytems and mainly its a big "firehose" with no good ability to filter out what you don't need. 
 
 User looking for a job involving Quarkus - where do he go look ?
 
@@ -62,12 +62,14 @@ Enable GitHub discussions feature on `quarkusio/quarkusio` with the following in
 - Events (Setup and announce of interest or other events)
 - Jobs and Opportunities (post by anyone)
 
+Add discussions triage to Quarkus Bot to add a comment/label based on triage rules.
+
 == Consequences
 
 With this the conversation(s) in Quarkus community is no longer only about development on quarkus-dev mailing list nor just by Quarkus core contributors. That should enable broader participation and let Quarkus community grow beyond just "the code".
 
 We do add a Q/A section to this as complementary for Zulip Users and Stackoverflow. Belief is that if we don't it will just naturally happen that people will do it thus best from start have a place to put that. Over time we hopefully shuold see Zulip #users be less active as Zulip chats are non searchable and requires a login to read this is a plus.
 
-Downsides: "Another notification sinkhole"; yes - it is another additional location to keep an eye on but since this is hosted at Github you can use the unified notifcation mechanism and system; especially you can just subscribe or unsubrcibe based on  what is best for the invidiual community member.
+Downsides: "Another notification sinkhole"; yes - it is another additional location to keep an eye on but since this is hosted at Github you can use the unified notifcation mechanism and system; especially you can just subscribe or unsubcribe based on  what is best for the invidiual community member. We remedy this by enabling triaging via Quarksu Bot that we can improve over time. Something we can't do with any of the other systems (zulip/stackoverflow).
 
-"Stackoverflow competition"; yes - this will be "competing" with Stackoverflow but I honestly think we as Quarkus community can better serve us by being able to have a focused and dedicated area to have a more free Q/A section to replace login-only Zimbra #users and Stackoverflow stays as is and something to keep an eye on.
+"Stackoverflow competition"; yes - this will be "competing" with Stackoverflow. This is not trying to "battle" with SO. StackOverflow does work for the casual quarkus user but its quite a manual process to participate as a contributor. What is worse is Zulip #user chats which has high traffic, lots of answers but close to zero discoverability/searching. Quarkus community can better serve each other by being able to have a focused and dedicated area to have a more free Q/A section to replace login-only Zimbra #users and Stackoverflow stays as is and something to keep an eye on.
