@@ -36,9 +36,6 @@ User looking for a job involving Quarkus - where do he go look ?
 
 == Considered options
 
-* stackoverflow will not go away - thus for this current proposal it does not include Q/A section.
-* "I can't track more places" is a very valid worry; the advantage of discussions is that it shows up in your normal github notifcations which you can mute, filter,etc. like anything else on Github. Thus it gives you more control rather than just adding more noise.
-
 === quarkusio-community mailing list
 Not proposed since it is just another waterhose of info with no good ability to ignore/consume as needed/wanted.
 
