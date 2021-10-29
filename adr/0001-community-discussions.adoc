@@ -55,16 +55,19 @@ Could be considered as allow us to have separate permissions for moderator/triag
 Enable GitHub discussions feature on `quarkusio/quarkusio` with the following initial categories:
 
 - Announcements (post only by admins)
-- Quarkus Comunity (post by anyone, general discussions)
+- Introductions (posts by anyone, optional place introduce yourself)
+- Comunity (post by anyone, general discussions)
+- Q&A (post by anyone, Q&A mode enabled)
 - Quarkus Insights Episodes (show notes and offline comments)
-- Quarkus World Tour and other Events (Setup and announce of interest or other events)
+- Events (Setup and announce of interest or other events)
 - Jobs and Opportunities (post by anyone)
 
 == Consequences
 
-With this the conversation(s) in Quarkus community is no longer only about development on quarkus-dev mailing list nor  just by Quarkus core contributors. That should enable broader participation and let Quarkus community grow beyond just "the code".
+With this the conversation(s) in Quarkus community is no longer only about development on quarkus-dev mailing list nor just by Quarkus core contributors. That should enable broader participation and let Quarkus community grow beyond just "the code".
 
-We don't (yet) add a Q/A section to this as Zulip Users and Stackoverflow still exist.
+We do add a Q/A section to this as complementary for Zulip Users and Stackoverflow. Belief is that if we don't it will just naturally happen that people will do it thus best from start have a place to put that. Over time we hopefully shuold see Zulip #users be less active as Zulip chats are non searchable and requires a login to read this is a plus.
 
 Downsides: "Another notification sinkhole"; yes - it is another additional location to keep an eye on but since this is hosted at Github you can use the unified notifcation mechanism and system; especially you can just subscribe or unsubrcibe based on  what is best for the invidiual community member.
 
+"Stackoverflow competition"; yes - this will be "competing" with Stackoverflow but I honestly think we as Quarkus community can better serve us by being able to have a focused and dedicated area to have a more free Q/A section to replace login-only Zimbra #users and Stackoverflow stays as is and something to keep an eye on.
