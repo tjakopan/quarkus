@@ -26,9 +26,15 @@ public class Marshaller {
 
     static {
         DEFAULT_CODECS = new HashMap<>();
+        DEFAULT_CODECS.put(Boolean.class, Codecs.BooleanCodec.INSTANCE);
         DEFAULT_CODECS.put(String.class, Codecs.StringCodec.INSTANCE);
+        DEFAULT_CODECS.put(Byte.class, Codecs.ByteCodec.INSTANCE);
+        DEFAULT_CODECS.put(Short.class, Codecs.ShortCodec.INSTANCE);
         DEFAULT_CODECS.put(Integer.class, Codecs.IntegerCodec.INSTANCE);
+        DEFAULT_CODECS.put(Long.class, Codecs.LongCodec.INSTANCE);
+        DEFAULT_CODECS.put(Float.class, Codecs.FloatCodec.INSTANCE);
         DEFAULT_CODECS.put(Double.class, Codecs.DoubleCodec.INSTANCE);
+        // TODO byte[]?
     }
 
     Map<Class<?>, Codec<?>> codecs = new HashMap<>();
