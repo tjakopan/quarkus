@@ -695,8 +695,8 @@ triage:
     - id: mailer
       labels: [area/mailer]
       expression: |
-        match("\\bmail\\b", title)
-        || match("mailer", title)
+        matches("\\bmail\\b", title)
+        || matches("mailer", title)
       notify: [cescoffier]
       directories:
         - extensions/mailer/
@@ -754,7 +754,7 @@ triage:
         - jakarta/
     - id: virtual-threads
       labels: [area/virtual-threads]
-      title: "(virtual.thread|RunOnVirtualThread"
+      title: "(virtual.thread|RunOnVirtualThread)"
       notify: [cescoffier, ozangunalp]
   qe:
     notify: [rsvoboda, mjurc]

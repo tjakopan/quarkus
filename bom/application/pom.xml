@@ -17,7 +17,7 @@
         <angus-activation.version>2.0.1</angus-activation.version>
         <bouncycastle.version>1.76</bouncycastle.version>
         <bouncycastle.fips.version>1.0.2.3</bouncycastle.fips.version>
-        <bouncycastle.tls.fips.version>1.0.16</bouncycastle.tls.fips.version>
+        <bouncycastle.tls.fips.version>1.0.17</bouncycastle.tls.fips.version>
         <expressly.version>5.0.0</expressly.version>
         <findbugs.version>3.0.2</findbugs.version>
         <jandex.version>3.1.5</jandex.version>
@@ -38,7 +38,7 @@
         <micrometer.version>1.11.1</micrometer.version><!-- keep in sync with hdrhistogram -->
         <hdrhistogram.version>2.1.12</hdrhistogram.version><!-- keep in sync with micrometer -->
         <google-auth.version>0.22.0</google-auth.version>
-        <graphql-java.version>20.2</graphql-java.version> <!-- keep in sync with smallrye-graphql -->
+        <graphql-java.version>21.1</graphql-java.version> <!-- keep in sync with smallrye-graphql -->
         <microprofile-config-api.version>3.0.3</microprofile-config-api.version>
         <microprofile-health-api.version>4.0.1</microprofile-health-api.version>
         <microprofile-metrics-api.version>4.0.1</microprofile-metrics-api.version>
@@ -55,7 +55,7 @@
         <smallrye-health.version>4.0.4</smallrye-health.version>
         <smallrye-metrics.version>4.0.0</smallrye-metrics.version>
         <smallrye-open-api.version>3.6.2</smallrye-open-api.version>
-        <smallrye-graphql.version>2.4.0</smallrye-graphql.version>
+        <smallrye-graphql.version>2.5.0</smallrye-graphql.version>
         <smallrye-opentracing.version>3.0.3</smallrye-opentracing.version>
         <smallrye-fault-tolerance.version>6.2.6</smallrye-fault-tolerance.version>
         <smallrye-jwt.version>4.3.1</smallrye-jwt.version>
@@ -142,19 +142,19 @@
         <infinispan.version>14.0.17.Final</infinispan.version>
         <infinispan.protostream.version>4.6.5.Final</infinispan.protostream.version>
         <caffeine.version>3.1.5</caffeine.version>
-        <netty.version>4.1.97.Final</netty.version>
+        <netty.version>4.1.100.Final</netty.version>
         <brotli4j.version>1.12.0</brotli4j.version>
         <reactive-streams.version>1.0.4</reactive-streams.version>
         <jboss-logging.version>3.5.3.Final</jboss-logging.version>
         <mutiny.version>2.5.1</mutiny.version>
-        <kafka3.version>3.5.1</kafka3.version>
+        <kafka3.version>3.6.0</kafka3.version>
         <lz4.version>1.8.0</lz4.version> <!-- dependency of the kafka-clients that could be overridden by other imported BOMs in the platform -->
         <snappy.version>1.1.10.5</snappy.version>
         <strimzi-test-container.version>0.100.0</strimzi-test-container.version>
         <!-- Scala is used by Kafka so we need to choose a compatible version -->
         <scala.version>2.13.12</scala.version>
         <aws-lambda-java.version>1.2.3</aws-lambda-java.version>
-        <aws-lambda-java-events.version>3.11.2</aws-lambda-java-events.version>
+        <aws-lambda-java-events.version>3.11.3</aws-lambda-java-events.version>
         <aws-xray.version>2.14.0</aws-xray.version>
         <azure-functions-java-library.version>2.2.0</azure-functions-java-library.version>
         <azure-functions-java-spi.version>1.0.0</azure-functions-java-spi.version>
@@ -180,7 +180,7 @@
         <okhttp.version>3.14.9</okhttp.version><!-- keep in sync with okio -->
         <okio.version>1.17.2</okio.version><!-- keep in sync with okhttp -->
         <hibernate-quarkus-local-cache.version>0.2.1</hibernate-quarkus-local-cache.version>
-        <flapdoodle.mongo.version>4.7.0</flapdoodle.mongo.version>
+        <flapdoodle.mongo.version>4.9.2</flapdoodle.mongo.version>
         <quarkus-spring-api.version>5.2.SP7</quarkus-spring-api.version>
         <quarkus-spring-data-api.version>2.1.SP2</quarkus-spring-data-api.version>
         <quarkus-spring-security-api.version>5.4.Final</quarkus-spring-security-api.version>
@@ -189,11 +189,11 @@
         <jna.version>5.8.0</jna.version><!-- should satisfy both testcontainers and mongodb -->
         <antlr.version>4.10.1</antlr.version><!-- needs to align with same property in build-parent/pom.xml -->
         <quarkus-security.version>2.0.2.Final</quarkus-security.version>
-        <keycloak.version>22.0.3</keycloak.version>
+        <keycloak.version>22.0.4</keycloak.version>
         <logstash-gelf.version>1.15.1</logstash-gelf.version>
         <checker-qual.version>3.38.0</checker-qual.version>
         <error-prone-annotations.version>2.22.0</error-prone-annotations.version>
-        <jib-core.version>0.24.0</jib-core.version>
+        <jib-core.version>0.25.0</jib-core.version>
         <google-http-client.version>1.43.3</google-http-client.version>
         <scram-client.version>2.1</scram-client.version>
         <picocli.version>4.7.5</picocli.version>
@@ -866,6 +866,16 @@
             <dependency>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-oidc-client-reactive-filter-deployment</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-oidc-client-graphql</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-oidc-client-graphql-deployment</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
